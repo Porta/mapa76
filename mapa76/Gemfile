@@ -9,8 +9,16 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-gem 'unicorn'
+group :test do
+  gem 'shoulda-context'
+  gem 'shoulda-matchers'
+  gem 'factory_girl'
+end
+
+gem 'haml'
 gem 'mongoid'
+gem 'jquery-rails'
+gem 'mongoid'
+gem 'unicorn'
 
 # gem 'debugger'
