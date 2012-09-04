@@ -9,10 +9,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :test do
+group :development, :test do
+  gem 'factory_girl'
+  gem 'guard-test'
+  gem 'ruby-prof'
   gem 'shoulda-context'
   gem 'shoulda-matchers'
-  gem 'factory_girl'
 end
 
 gem 'haml'
