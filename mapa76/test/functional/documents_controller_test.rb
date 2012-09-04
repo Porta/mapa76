@@ -21,5 +21,12 @@ class DocumentsControllerTest < ActionController::TestCase
       assert_not_nil assigns(:document)
       assert_select 'h1.title', @document.title
     end
+
+    should "Import a new document" do
+      get :new
+      assert_response :success
+      assert_template :new
+      assert_select 'h1', "New document"
+    end
   end
 end
