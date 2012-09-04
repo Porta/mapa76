@@ -10,7 +10,7 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'factory_girl'
+  gem 'factory_girl_rails'
   gem 'guard-test'
   gem 'ruby-prof'
   gem 'shoulda-context'
