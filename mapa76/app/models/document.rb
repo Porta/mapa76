@@ -16,4 +16,16 @@ class Document
   field :state,            type: Symbol, default: :waiting
 
   has_and_belongs_to_many :people, index: true
+
+  def readable?
+    true
+  end
+
+  def has_geocoded_addresses?
+    true
+  end
+
+  def processed?
+    true
+  end
 end
